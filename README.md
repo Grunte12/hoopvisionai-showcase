@@ -1,38 +1,50 @@
-# HoopVisionAI Showcase
+# HoopVisionAI Case Study
 
-HoopVisionAI is a private NBA fantasy analytics web app focused on Sorare-style decision support: projections, L10 tracking, injury impact, team depth, and lineup optimization.
+HoopVisionAI is a private NBA fantasy analytics web app focused on projection tracking, L10 movement, injury impact, team depth context, and lineup-building workflows.
 
-> This is a public showcase repository. The production source code is private because it contains authentication flows, billing integration, database access, sports-data pipeline details, and deployment-specific configuration.
+> This repository is a public case study. It intentionally does not include the production source code, auth flows, billing logic, database access, Supabase functions, pipeline scripts, credential IDs, or private integration details.
 
-## What This Repository Contains
+## Live Project
 
-- A small mock React/Vite app showing the product concept
-- Mock player projections and lineup data
-- A sanitized architecture description
-- Portfolio-ready documentation
-
-It does not include production auth, Supabase functions, Stripe webhooks, service-role access, raw data pipelines, credential IDs, or real user data.
+- Deployed app: https://hoopvisionai.com
+- Full source: private for security
 
 ## Screenshot
 
-![HoopVisionAI mock dashboard](public/screenshots/dashboard.png)
+This screenshot is captured from the deployed website, not from generated mock UI.
 
-## Product Capabilities Represented
+![HoopVisionAI deployed homepage](assets/deployed-homepage.png)
 
-- L10 and projection movement tracking
-- Injury-aware opportunity analysis
-- Team depth context
-- Lineup cap and matchup tradeoff evaluation
-- Dashboard-first workflow for daily fantasy decisions
+## What The Product Does
 
-## Tech Stack Represented
+HoopVisionAI is designed for competitive Sorare NBA-style decision making:
+
+- L10 momentum tracking
+- projection and upside analysis
+- injury news impact analysis
+- team depth context
+- lineup optimization concepts
+- trade center / value comparison concepts
+- Sorare account connection flow
+- subscription-gated feature concepts
+
+## Tech Stack
+
+### Frontend
 
 - React
 - TypeScript
 - Vite
-- Mock analytics data
+- Tailwind CSS
+- shadcn/ui
 
-The private app also uses a database-backed data layer and Python prediction pipeline, but those implementation details are intentionally summarized rather than exposed here.
+### Private Backend/Data Workflow
+
+- Supabase
+- Python data pipeline
+- sports data ingestion
+- projection model workflow
+- private auth and integration logic
 
 ## Sanitized Architecture
 
@@ -43,32 +55,18 @@ React web app
 Private data layer
       |
       v
-Prediction pipeline
+Projection and injury-analysis pipeline
       |
       v
 Sports data and fantasy integrations
 ```
 
-## Run Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Build check:
-
-```bash
-npm run build
-```
-
-## Why The Full Source Is Private
-
-The deployed HoopVisionAI app includes private authentication, subscription, database, pipeline, and external-integration logic. Keeping that source private avoids exposing operational details while still allowing this repository to communicate the product idea, architecture, and engineering scope.
+The production repository remains private because it contains sensitive operational details, auth integration, billing integration, pipeline logic, database access, and external provider workflows.
 
 ## What I Learned
 
-- Building analytics workflows around real user decisions
-- Designing projection systems that combine model output with contextual signals
-- Separating public product storytelling from private production infrastructure
-- Treating credentials, auth flows, and data pipelines as sensitive implementation details
+- Building analytics tools around real user decision workflows
+- Connecting model output with UI that explains context and tradeoffs
+- Treating authentication, billing, and data pipelines as sensitive systems
+- Presenting a deployed project publicly without exposing private internals
+
