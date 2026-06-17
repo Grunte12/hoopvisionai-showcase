@@ -1,0 +1,185 @@
+:root {
+  background: #080b13;
+  color: #edf4ff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 34px 20px 56px;
+}
+
+.hero {
+  padding: 42px 0 28px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #8bd9ff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 14px;
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  line-height: 0.95;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 760px;
+  color: #adbbd0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.metrics,
+.grid,
+.flow {
+  display: grid;
+  gap: 16px;
+}
+
+.metrics {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 18px;
+}
+
+.metrics article,
+.panel {
+  border: 1px solid rgba(139, 217, 255, 0.18);
+  border-radius: 8px;
+  background: #101827;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+.metrics article {
+  padding: 18px;
+}
+
+.metrics span,
+.player-row span,
+.pipeline li,
+li,
+.architecture p {
+  color: #aebbd0;
+}
+
+.metrics strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 2rem;
+}
+
+.grid {
+  grid-template-columns: 1.3fr 1fr;
+}
+
+.panel {
+  padding: 22px;
+}
+
+.wide {
+  grid-row: span 2;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.badge {
+  height: fit-content;
+  border-radius: 999px;
+  background: rgba(139, 217, 255, 0.12);
+  color: #8bd9ff;
+  padding: 7px 11px;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.player-table {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.player-row {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr 0.8fr 0.8fr 0.6fr;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 13px;
+}
+
+.player-row em {
+  color: #71ffbf;
+  font-style: normal;
+  font-weight: 900;
+  text-align: right;
+}
+
+.pipeline {
+  display: grid;
+  gap: 10px;
+  padding-left: 22px;
+}
+
+.architecture {
+  margin-top: 28px;
+}
+
+.flow {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 16px 0;
+}
+
+.flow span {
+  border: 1px solid rgba(139, 217, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 16px;
+  text-align: center;
+  font-weight: 900;
+}
+
+@media (max-width: 820px) {
+  .metrics,
+  .grid,
+  .flow {
+    grid-template-columns: 1fr;
+  }
+
+  .player-row,
+  .panel-header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .player-row em {
+    text-align: left;
+  }
+}
+
