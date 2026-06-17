@@ -13,6 +13,10 @@ HoopVisionAI is a private NBA fantasy analytics web app focused on Sorare-style 
 
 It does not include production auth, Supabase functions, Stripe webhooks, service-role access, raw data pipelines, credential IDs, or real user data.
 
+## Screenshot
+
+![HoopVisionAI mock dashboard](public/screenshots/dashboard.png)
+
 ## Product Capabilities Represented
 
 - L10 and projection movement tracking
@@ -68,4 +72,3 @@ The deployed HoopVisionAI app includes private authentication, subscription, dat
 - Designing projection systems that combine model output with contextual signals
 - Separating public product storytelling from private production infrastructure
 - Treating credentials, auth flows, and data pipelines as sensitive implementation details
-
